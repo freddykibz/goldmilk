@@ -18,7 +18,7 @@ export default function Home() {
     <div className='w-full'>
         <HeroBanner/>
         <ValueStatement/>
-        <Services/>
+        {/* <Services/> */}
         <ProcessCardList/>
         <AboutHeading/>
         <About/>

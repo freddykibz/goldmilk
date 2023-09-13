@@ -6,12 +6,12 @@ const Subscribe = () => {
       id='contact-us'
       className=' w-full px-6 align-middle max-container flex justify-between items-center max-lg:flex-col gap-10 backgrounds'
     >
-      <h3 className='text-2  md:text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold'>
+      <h3 className='text-2  md:text-2xl leading-[68px] lg:max-w-md font-palanquin font-bold'>
         Sign Up for
         <span className='text-gold'> Updates </span>& Newsletter
       </h3>
       <div className='lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-white rounded-full'>
-        <input type='text'  className='input' />
+        <input type='text'  className='input' placeholder="goldmilkdairies" />
         <div className='flex max-sm:justify-end items-center max-sm:w-full'>
           <Button label='Sign Up' fullWidth />
         </div>

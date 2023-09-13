@@ -15,7 +15,7 @@ const Footer = () => {
                  className="object-contain"
                 />
                 <p className="text-base text-gray-700">
-                    Gold milk Dairy 2023 <br/>
+                    GoldMilkDairy 2023 <br/>
                     All Rights Reserved
                 </p>
             </div >
@@ -46,7 +46,7 @@ const Footer = () => {
                     Privacy & Policy
                     </Link>
                     <Link href="/" className="text-gray-500">
-                    Terms & Condition
+                    Terms & Conditions
                     </Link>
                 </div>
 
