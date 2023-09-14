@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import  { space}  from '@/public/assets';
+import  { space, banner2}  from '@/public/assets';
 
 const Mission = () => {
   return (
@@ -25,8 +25,8 @@ const Mission = () => {
     <div className='flex-1 order-first flex-center flex-col'>
     <div className='h-[350] w-[150]' >
                 <Image
-                src={space}
-                width={150}
+                src={banner2}
+                width={540}
                 height={350}
                 alt="eye"
                 />

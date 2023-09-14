@@ -1,73 +1,47 @@
 'use client'
-import Image from "next/image";
-import { useState } from "react";
+import CustomButton from "./CustomButton"
+import Image from "next/image"
 
-import { shoes, statistics } from "../constants";
-import { Button, ShoeCard } from "@components";
-import { bigShoe1,banner1, banner2, banner3 } from "@public/assets";
-import { arrowRight } from "@public/assets";
+const Servicebanner = () => {
+    const handleSCroll = () => {
 
-
-const HeroBanner = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(banner1);
-
-  return (
-    <section id='home'
-      className='flex xl:flex-row flex-col flex-center min-h-screen  max-container px-30 '>
-      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28'>
-        <p className='text-xl font-montserrat text-coral-red'>
-        Navigating Dairy's Future
-        </p>
-
-        <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
-          <span className='xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>
-           Innovate, Thrive, in 
-          </span>
-          <br />
-          <span className='text-brown-sugar inline-block mt-3'> Dairy</span> Farming
+    }
+  
+    return (
+    
+    <div className='flex-center bg-brown-sugar  w-full flex-col md:flex-row mr-0'>
+        <div className="flex-1 flex-col py-6 px-4 items-start justify-center">
+        <h1 className='md:text-4xl uppercase text-white md:font-extrabold text-[32px] font-medium'>
+        Innovate, Thrive and, 
+        <br/> Profit in Dairy
         </h1>
-        <p className='font-montserrat text-gold-darkest text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
-        Connecting Dairy for Sustainable Growth
+        <p className="banner__subtitle ">
+        Unlocking Dairy Success: Bridging Excellence in Processing, Development, and Markets for Sustainable Profitability through Collaborative Ecosystems 
         </p>
-
-        {/* <Button label='Learn More' iconURL={arrowRight} /> */}
-
-        <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
-          {statistics.map((stat, index) => (
-            <div key={index}>
-              <p className='text-4xl font-palanquin font-bold'>{stat.value}</p>
-              <p className='leading-7 font-montserrat text-slate-gray'>
-                {stat.label}
-              </p>
-            </div>
-          ))}
+        <div className="flex gap-8 flex-row  flex-center md:mb-20">
+        <CustomButton
+           title="Learn MOre"
+           containerStyles="hidden sm:block text-white text-bold uppercase border-white border-4 rounded-full mt-10"
+           handleClick={handleSCroll}
+         />
+        
         </div>
+        
+       </div> 
+       <div  className="flex-1 h-540 w-full fill-container">
+       <div className="hero__image-container">
+        <div  className="hero__image  opacity-80  hidden sm:block">
+            <Image
+             src="/assets/cows.jpg" alt="hero" fill className="h-[540] w-3/4 object-cover position-right-0" 
+            />
+        </div>
+        
+        <div className="hero__image-overlay"></div>
       </div>
-{/* 
-      <div className='relative flex-1 flex justify-center w-1/2 items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center test_bg2 '>
-        <Image
-          src={banner2}
-          alt='shoe colletion'
-          width={550}
-          height={502}
-          className='object-contain relative z-10'
-        />
+        
+        </div>      
+    </div>
+  )
+}
 
-        <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6 test_bg1 '>
-          {shoes.map((image, index) => (
-            <div key={index}>
-              <ShoeCard
-                index={index}
-                imgURL={image}
-                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
-                bigShoeImg={bigShoeImg}
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
-    </section>
-  );
-};
-
-export default HeroBanner;
+export default Servicebanner;
