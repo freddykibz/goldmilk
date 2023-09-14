@@ -13,13 +13,13 @@ const HeroBanner = () => {
 
   return (
     <section id='home'
-      className='w-3/4 flex xl:flex-row flex-col justify-center min-h-screen  max-container px-30 '>
-      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28 test_bg3 '>
+      className='flex xl:flex-row flex-col justify-center min-h-screen  max-container px-30 '>
+      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28'>
         <p className='text-xl font-montserrat text-coral-red'>
         Navigating Dairy's Future
         </p>
 
-        <h1 className='mt-10 font-palanquin text-6xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
+        <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
           <span className='xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>
            Innovate, Thrive, in 
           </span>
@@ -43,7 +43,7 @@ const HeroBanner = () => {
           ))}
         </div>
       </div>
-
+{/* 
       <div className='relative flex-1 flex justify-center w-1/2 items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center test_bg2 '>
         <Image
           src={banner2}
@@ -65,7 +65,7 @@ const HeroBanner = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
