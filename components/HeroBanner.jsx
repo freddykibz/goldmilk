@@ -13,7 +13,7 @@ const HeroBanner = () => {
 
   return (
     <section id='home'
-      className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container px-46 '>
+      className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container px-30 '>
       <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28'>
         <p className='text-xl font-montserrat text-coral-red'>
         Navigating Dairy's Future
@@ -48,7 +48,7 @@ const HeroBanner = () => {
         <Image
           src={banner2}
           alt='shoe colletion'
-          width={610}
+          width={550}
           height={502}
           className='object-contain relative z-10'
         />
