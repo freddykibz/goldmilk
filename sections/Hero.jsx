@@ -13,7 +13,7 @@ return (
         <div className="flex-1 w-full  flex-col py-66 px-4 items-start justify-center bg-hero_bg">
         <h1 className='hero_head' >
         Leading the Way to Dairy Profitability
-        <br/> "Innovate, Thrive, and Profit in Dairy
+        <br/> "Innovate Thrive and Profit in Dairy
         </h1>
         <p className="font-medium text-[24px] px-6 text-gold">
         Connecting Dairy for Sustainable Growth
