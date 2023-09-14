@@ -44,7 +44,7 @@ const HeroBanner = () => {
         </div>
       </div>
 
-      <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
+      <div className='relative flex-1 flex justify-center w-1/2 items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
         <Image
           src={banner2}
           alt='shoe colletion'
