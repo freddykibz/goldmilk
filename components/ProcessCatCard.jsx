@@ -4,7 +4,7 @@ import { processCats } from "@constants"
 const ProcessCatCard = ({ icon, title, index }) => {
   return (
     <div className="shadow-sm  flex-col flex-center ">
-        <div className= {` bg-gallery  flex-center flex-col p-6 md:rounded-[40px] ${index !== processCats.length - 1  ? "mb-0" : "mb-0"}  `}>
+        <div className= {`bg-gallery  flex-center flex-col p-6 md:rounded-[40px] ${index !== processCats.length - 1  ? "mb-0" : "mb-0"} process-card `}>
         <div className={`w-[240px] h-[120px]  mt-4 flex-center `}>
             <Image
             src={icon}
