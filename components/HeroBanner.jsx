@@ -13,8 +13,8 @@ const HeroBanner = () => {
 
   return (
     <section id='home'
-      className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container px-30 '>
-      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28'>
+      className='w-3/4 flex xl:flex-row flex-col justify-center min-h-screen  max-container px-30 '>
+      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28 test_bg3 '>
         <p className='text-xl font-montserrat text-coral-red'>
         Navigating Dairy's Future
         </p>
@@ -44,7 +44,7 @@ const HeroBanner = () => {
         </div>
       </div>
 
-      <div className='relative flex-1 flex justify-center w-1/2 items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
+      <div className='relative flex-1 flex justify-center w-1/2 items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center test_bg2 '>
         <Image
           src={banner2}
           alt='shoe colletion'
@@ -53,7 +53,7 @@ const HeroBanner = () => {
           className='object-contain relative z-10'
         />
 
-        <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
+        <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6 test_bg1 '>
           {shoes.map((image, index) => (
             <div key={index}>
               <ShoeCard
